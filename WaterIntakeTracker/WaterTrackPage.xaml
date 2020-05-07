@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterIntakeTracker.WaterTrackPage"
+             Title="Water Tracker">
+
+    <StackLayout Margin="50">
+        <Label Text="Hi!"
+               FontSize="Title"
+               HorizontalOptions="Start"/>
+        <Editor Placeholder="Create your profile"
+                Text="{Binding Text}"
+                FontSize="Title"/>
+        <Button Text="edit your profile"
+                FontSize="Caption"
+                HorizontalOptions="End"/>
+        <Label HorizontalOptions="Center"
+               BindingContext="{x:Reference stepper}"
+               Text="{Binding Value}"
+               FontSize="170"
+               />
+        <Stepper HorizontalOptions="EndAndExpand"
+                 Minimum="0"
+                 Maximum="10"
+                 x:Name="stepper"
+                 Increment="1" />
+
+        <Label Text="Daily Goal"/>
+        <Editor Placeholder="2.35 Lts"
+                FontSize="30"/>
+       <Editor Placeholder="5 Bottles"
+               FontSize="30"/>
+    </StackLayout>
+</ContentPage>

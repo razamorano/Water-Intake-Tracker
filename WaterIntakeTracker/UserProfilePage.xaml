@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterIntakeTracker.UserProfilePage"
+             Title="Note Entry">
+    <StackLayout Margin="40">
+        <Label Text="Modify your profile"
+               HorizontalOptions="Center"
+               FontSize="Title"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="1"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Text="Name:"/>
+            <Editor Grid.Column="1"
+                    Grid.Row="1"
+                    Placeholder="Default Name"
+                    Text="{Binding Text}"
+                    FontSize="Default"/>
+
+            <Label Grid.Row="2"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Text="Weight:"/>
+            <Editor Grid.Column="1"
+                    Grid.Row="2"
+                    Placeholder="0 Kg"
+                    Text="{Binding Text}"
+                    FontSize="Default"/>
+
+            <Label Grid.Row="3"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Text="Workout:"/>
+            <Editor Grid.Column="1"
+                    Grid.Row="3"
+                    Placeholder="30 min"
+                    Text="{Binding Text}"
+                    FontSize="Default"/>
+
+            <Label Grid.Row="4"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   Text="Bottle Size:"/>
+            <Editor Grid.Column="1"
+                    Grid.Row="4"
+                    Placeholder="750 ml"
+                    Text="{Binding Text}"
+                    FontSize="Default"/>
+        </Grid>
+        <StackLayout Margin="60">
+
+        <Label Text="Daily Goal"
+               HorizontalOptions=""/>
+        <Editor Placeholder="2.35 Lts"
+                FontSize="30"
+                HorizontalOptions=""/>
+
+        <Editor Placeholder="5 Bottles"
+                FontSize="30"
+                HorizontalOptions=""/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
