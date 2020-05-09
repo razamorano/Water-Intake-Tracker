@@ -57,15 +57,17 @@
         </Grid>
         <StackLayout Margin="60">
 
-        <Label Text="Daily Goal"
-               HorizontalOptions=""/>
+        <Label Text="Daily Goal"/>
         <Editor Placeholder="2.35 Lts"
-                FontSize="30"
-                HorizontalOptions=""/>
+                FontSize="30"/>
 
         <Editor Placeholder="5 Bottles"
-                FontSize="30"
-                HorizontalOptions=""/>
+                FontSize="30"/>
         </StackLayout>
+
+        <Button Text="SAVE"
+                FontSize="Caption"
+                HorizontalOptions="End"
+                Clicked="saveBTN"/>
     </StackLayout>
 </ContentPage>

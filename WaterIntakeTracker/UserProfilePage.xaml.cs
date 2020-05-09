@@ -11,5 +11,11 @@ namespace WaterIntakeTracker
         {
             InitializeComponent();
         }
+
+        private void saveBTN(object sender, EventArgs e)
+        {
+            //Navigation.PushAsync(new WaterTrackPage());
+            Navigation.PopAsync();
+        }
     }
 }

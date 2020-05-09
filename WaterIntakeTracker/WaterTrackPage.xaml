@@ -8,27 +8,38 @@
         <Label Text="Hi!"
                FontSize="Title"
                HorizontalOptions="Start"/>
-        <Editor Placeholder="Create your profile"
-                Text="{Binding Text}"
+
+        <Label  Text="{Binding NameLBL}"
                 FontSize="Title"/>
+
         <Button Text="edit your profile"
                 FontSize="Caption"
-                HorizontalOptions="End"/>
+                HorizontalOptions="End"
+                Clicked="editprofileBTN"/>
+
+        <Label Text="Bottles from today"
+               FontSize="Header"/>
+
         <Label HorizontalOptions="Center"
-               BindingContext="{x:Reference stepper}"
-               Text="{Binding Value}"
-               FontSize="170"
-               />
+               Text="{Binding BottlesLBL}"
+               FontSize="170"/>
+               <!--BindingContext="{x:Reference stepper}"-->
+
         <Stepper HorizontalOptions="EndAndExpand"
                  Minimum="0"
                  Maximum="10"
-                 x:Name="stepper"
-                 Increment="1" />
+                 Increment="1"
+                 ValueChanged="OnStepperBottleValue"/>
+                 <!--x:Name="stepper"
+                  />-->
 
         <Label Text="Daily Goal"/>
-        <Editor Placeholder="2.35 Lts"
+
+        <Label Text="{Binding WaterLtLBL}"
                 FontSize="30"/>
-       <Editor Placeholder="5 Bottles"
+
+       <Editor Text="{Binding WaterBottleLBL}"
                FontSize="30"/>
+
     </StackLayout>
 </ContentPage>
