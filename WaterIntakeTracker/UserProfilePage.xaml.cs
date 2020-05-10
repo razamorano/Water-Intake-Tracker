@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using WaterIntakeTracker.Models;
 using Xamarin.Forms;
 
 namespace WaterIntakeTracker
 {
     public partial class UserProfilePage : ContentPage
     {
+        public string NameLBL { get; set; }
+
         public UserProfilePage()
         {
             InitializeComponent();

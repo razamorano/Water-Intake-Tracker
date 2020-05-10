@@ -3,26 +3,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WaterIntakeTracker.UserProfilePage"
-             Title="Note Entry">
+             Title="User Profile">
     <StackLayout Margin="40">
-        <Label Text="Modify your profile"
-               HorizontalOptions="Center"
-               FontSize="Title"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
-
             </Grid.ColumnDefinitions>
             
             <Label Grid.Row="1"
                    HorizontalOptions="End"
                    VerticalOptions="Center"
                    Text="Name:"/>
+
             <Editor Grid.Column="1"
                     Grid.Row="1"
-                    Placeholder="Default Name"
-                    Text="{Binding Text}"
+                    Text="{Binding NameLBL}"
                     FontSize="Default"/>
 
             <Label Grid.Row="2"
@@ -66,7 +62,7 @@
         </StackLayout>
 
         <Button Text="SAVE"
-                FontSize="Caption"
+                FontSize="20"
                 HorizontalOptions="End"
                 Clicked="saveBTN"/>
     </StackLayout>

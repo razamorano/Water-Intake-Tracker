@@ -14,6 +14,8 @@ namespace WaterIntakeTracker
 
             //FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             //MainPage = new WaterTrackPage();
+
+            //New definition to open more than one page
             MainPage = new NavigationPage(new WaterTrackPage());
         }
     }
