@@ -7,8 +7,6 @@ namespace WaterIntakeTracker
 {
     public partial class UserProfilePage : ContentPage
     {
-        public string NameLBL { get; set; }
-
         public UserProfilePage()
         {
             InitializeComponent();
